@@ -142,3 +142,5 @@ secret.tfvars
 static/
 
 venv*/
+
+.DS_Store
