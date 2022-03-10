@@ -74,7 +74,7 @@ def fetch(
 
         if status_code == httpx.codes.GATEWAY_TIMEOUT:
             raise GitHubClientError(GitHubClientError.CONNECTION_ERROR,
-                                f"Can not connect to GitHub API: {str(error)}")
+                                    f"Can not connect to GitHub API: {str(error)}")
 
         raise GitHubClientError(GitHubClientError.NOT_ACCESSIIBLE_REPO,
                                 f"Can not get repo info. Repo does not exist or it is private: {str(error)}")
